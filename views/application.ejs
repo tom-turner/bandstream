@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Bandstream - Ticketing, Live-streaming, Chat &amp; Video On Demand.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<meta name="description" content="A Bandstream event is just like any other live ticketed event, except your audience is online and the venue can be anywhere!" />
+		<meta property="og:site_name" content="Bandstream - Ticketing, Live-streaming, Chat &amp; Video On Demand." />
+		<meta property="og:title" content="Bandstream - Ticketing, Live-streaming, Chat &amp; Video On Demand." />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="A Bandstream event is just like any other live ticketed event, except your audience is online and the venue can be anywhere!" />
+		<meta name="google-site-verification" content="0vRav2qXpaX4OK2LU-J-uuICYPOwkZYD6mQ8l_W4lHc" />
+		<meta name="sitemap" content="https://bandstream.tv/sitemap.xml" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400italic,200,200italic,300,300italic,500,500italic,100,100italic,700,700italic" rel="stylesheet" type="text/css" />
+		<link rel="icon" type="image/png" href="assets/images/favicon.png" />
+		<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+		<link rel="stylesheet" href="assets/main.css" />
+		<noscript><link rel="stylesheet" href="assets/noscript.css" /></noscript>
+		<script async src="//www.googletagmanager.com/gtag/js?id=UA-168435544-1"></script>
+		<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-168435544-1', { 'send_page_view': false, 'anonymize_ip': true });</script>
+		<!-- This is the InPlayer Script. This makes the paywall work. -->
+		 <script type="text/javascript" src="https://assets.inplayer.com/paywall/latest/paywall.min.js"> </script>
+		
+		
+		
+		 <!-- This Styles the picture as paywall -->
+		<style media="screen">
+		 .card img {
+		 width: 100%;
+		 max-width: 750px; /* This controls the size of the card. */
+		 margin: 0 auto;
+		 cursor: pointer;
+		 transition: all .2s ease-out;
+		 box-shadow: 0 14px 20px -20px rgba(0, 0, 0, .76); /* This controls the shadow effect of the card. */
+		 }
+		
+		 .card img:hover {
+		 transform: translateY(-4px);
+		 }
+		
+		 </style>
+		
+		 <!-- These are the button and menu's visual settings. They affect how the button and menu look like. You would normally need to change these so they can reflect your website's style. -->
+		 <style>
+		 .button {
+		 width: 170px; /* This controls the size of the Login button. */
+		 background-color: #FFFFFF; /* This controls the colour of the button. (#fff is White) */
+		 border-radius: 500px;
+		 padding: 10px;
+		 border: 0px;
+		 border-style: solid;
+		 border-color: black;
+		 margin-left: auto;
+		 font-family: 'Montserrat'; font-size: 22px;
+		 text-align: center;
+		 color: #000000;
+		 cursor: pointer;
+		 height: 100%;
+		 
+		 }
+		 
+		 .button:hover {
+		 background-color: #FFFFFF;
+		 color: #000000;
+		 border: 0px;
+		 border-style: solid;
+		 border-color: white;
+		 
+		 }
+		 
+		 .dropdown {
+		 width: 170px; /* This controls the size of the Login button. */
+		 background-color: #FFFFFF; /* This controls the colour of the button. (#fff is White) */
+		 border-radius: 500px;
+		 padding: 10px;
+		 border: 0px;
+		 border-style: solid;
+		 border-color: black;
+		 margin-left: auto;
+		 font-family: 'Montserrat'; font-size: 22px;
+		 text-align: center;
+		 color: #000000;
+		 cursor: pointer;
+		 height: 100%;
+		 
+		 
+		 }
+		 
+		 .dropdown:hover {
+		 background-color: #FFFFFF;
+		 color: #000000;
+		 border: 0px;
+		 border-style: solid;
+		 border-color: white;
+		 }
+		
+		 .dropdown .select {
+		 cursor: pointer;
+		 display: block;
+		 padding: 0px
+		 }
+		
+		 .dropdown .select>i {
+		 font-size: 20px;
+		 color: #888;
+		 cursor: pointer;
+		 transition: all .3s ease-in-out;
+		 float: right;
+		 line-height: 20px
+		 }
+		
+		 .dropdown:hover {
+		 box-shadow: 0 0 0px rgb(204, 204, 204)
+		 }
+		
+		 .dropdown:active {
+		 background-color: #FFFFFF
+		 }
+		
+		 .dropdown.active:hover,
+		 .dropdown.active {
+		 box-shadow: 0 0 0px rgb(204, 204, 204);
+		 background-color: #FFFFFF
+		 
+		 }
+		
+		 .dropdown.active .select>i {
+		 transform: rotate(-90deg);
+		 }
+		
+		 .dropdown .dropdown-menu {
+		 position: absolute;
+		 border-radius: 500px;
+		 background-color: #FFFFFF;
+		 width: 100%;
+		 left: 0;
+		 margin-top: 15px;
+		 box-shadow: 0 0px 0px rgb(204, 204, 204);
+		 overflow: hidden;
+		 display: none;
+		 max-height: 2000px;
+		 overflow-y: auto;
+		 z-index: 9
+		 }
+		
+		 .dropdown .dropdown-menu li {
+		 padding: 10px;
+		 transition: all .2s ease-in-out;
+		 cursor: pointer
+		 }
+		
+		 .dropdown .dropdown-menu {
+		 padding: 0;
+		 list-style: none
+		 }
+		
+		 .dropdown .dropdown-menu li:hover {
+		 background-color: #FFFFFF;
+		 color: #000000
+		 }
+		
+		 .dropdown .dropdown-menu li:active {
+		 background-color: #FFFFFF
+		 }
+		
+		 #inplayer-branded {
+		 display: none;
+		 }
+		 .inplayer-guest-footer span span {
+		 display: none;
+		 }
+		 .inplayer-guest-footer span span:before {
+		 display: none;
+		 }
+		
+		
+		
+		
+		
+		/* This is some stuff that fixes things Jasper wrote... */
+		
+		#account {
+		 display: none;
+		}
+		
+		#preview-container {
+		background-color: transparent;
+		border: none;
+		}
+		
+		 </style>
+		
+		
+		
+		
+		 <!-- This styles the DARK PAYWALL -->
+		 <style media="screen">
+		 input:-webkit-autofill,
+		 input:-webkit-autofill:hover,
+		 input:-webkit-autofill:focus,
+		 textarea:-webkit-autofill,
+		 textarea:-webkit-autofill:hover,
+		 textarea:-webkit-autofill:focus,
+		 select:-webkit-autofill,
+		 select:-webkit-autofill:hover,
+		 select:-webkit-autofill:focus {
+		 -webkit-box-shadow: 0 0 0 100px #3d4957 inset !important;
+		 -webkit-text-fill-color: #fff !important;
+		 }
+		
+		 .inplayer-paywall #brandheader {
+		 background: #26303a !important;
+		 border-bottom: 0px
+		 }
+		
+		 .inplayer-paywall header {
+		 background: #26303a;
+		 color: #fff;
+		 padding: 5px 0 22px 0;
+		 }
+		
+		 .inplayer-paywall header .headline a {
+		 color: rgba(255, 255, 255, 0.5);
+		 font-weight: bold;
+		 font-size: 1.3em;
+		 }
+		
+		 .inplayer-paywall section {
+		 background-color: #465260;
+		 }
+		
+		 .inplayer-paywall header .headline a.active {
+		 color: rgba(255, 255, 255, 1);
+		 }
+		
+		 .inplayer-paywall #inpx-social {
+		 background: #364250 !important;
+		 border: none !important;
+		 }
+		
+		 .socialoptions .suw-google {
+		 background: #adadad5c;
+		 color: rgba(255, 255, 255, 0.7) !important;
+		 }
+		
+		 .socialoptions .suw-google>i {
+		 border-right: 0;
+		 background: rgba(0, 0, 0, .1);
+		 }
+		
+		 .inplayer-paywall #ipx-maincontent {
+		 background: #465260 !important
+		 }
+		
+		 .inplayer-paywall input[type=email],
+		 .inplayer-paywall input[type=password],
+		 .inplayer-paywall input[type=text],
+		 .inplayer-paywall select {
+		 color: #fff;
+		
+		 }
+		
+		 .inplayer-paywall #ipx-maincontent .formelements input {
+		 border-bottom: 1px solid rgba(255, 255, 255, 0.21) !important;
+		 }
+		
+		 .inplayer-paywall #ipx-maincontent .formelements .labelholder label {
+		 color: #fff;
+		 }
+		
+		 .labelholder label,
+		 .selectholder label {
+		 color: #fff;
+		 }
+		
+		 .inplayer-paywall #ipx-maincontent .formelements .passwordreset span {
+		 color: rgba(255, 255, 255, 0.48);
+		 font-size: 12px
+		 }
+		
+		 #ipx-maincontent::-webkit-scrollbar-thumb,
+		 .infinite-scroll-component::-webkit-scrollbar-thumb {
+		 background: #26303a;
+		 }
+		
+		 .inplayer-paywall #inplayer-progressbar {
+		 display: none;
+		 }
+		
+		 .inplayer-paywall .footer-container {
+		 border: none;
+		 background: #26303a !important;
+		 }
+		
+		 .inplayer-paywall .footer-container footer {
+		 color: #fff;
+		 background: #26303a !important;
+		 }
+		
+		 .inplayer-paywall .languages {
+		 color: #fff;
+		 }
+		
+		 #pswinfo {
+		 color: #fff;
+		 }
+		
+		 .ReactModal__Overlay.ReactModal__Overlay--after-open {
+		 color: #b8b8b8;
+		 }
+		
+		 #priceoptions {
+		 display: flex;
+		 flex-direction: column;
+		 align-items: center;
+		 max-width: 100%;
+		 }
+		
+		 .align-with-content {
+		 display: flex;
+		 justify-content: space-between;
+		 max-width: 100%;
+		 margin: 0 auto;
+		 }
+		
+		 .pricing_container {
+		 width: 100%;
+		 margin: 0 20px;
+		 }
+		
+		 .pricing_item {
+		 border: 1px solid #dedede75;
+		 }
+		
+		 .pricing_item .pricing_left {
+		 border-right: 1px solid #dedede75;
+		 }
+		
+		 .pricing_item .pricing_left i {
+		 border-top: 1px solid #dedede75;
+		 }
+		
+		 .inplayer-paywall h1,
+		 .inplayer-paywall h2,
+		 .inplayer-paywall h4,
+		 .inplayer-paywall h5,
+		 .inplayer-paywall h6 {
+		 color: #ececec;
+		 }
+		
+		 .inplayer-paywall .gdpr-buttons {
+		 background-color: #465260;
+		 }
+		
+		 .gdpr-text h2 {
+		 color: #f0f3f6;
+		 }
+		
+		 .gdpr-text .gdpr-inside p {
+		 color: #fff
+		 }
+		
+		 .no-credit-cards {
+		 margin: 0 auto;
+		 width: 80%;
+		 }
+		 </style>
+		
+		
+		</head>
+		<!-- END OF HEADER EMBED -->
+	</head>
+
+	<body class="">
+		<%- body %>
+	</body>
+
+</html>

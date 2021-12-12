@@ -1,0 +1,717 @@
+	<body class="is-loading">
+		<div id="inplayer-114601" class="inplayer-paywall"></div>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		
+		<script type="text/javascript">
+		var paywall = new InplayerPaywall('87e3d38f-313d-47d0-b6a7-d9afe4e21a61', [{
+		id: 114601,
+		options: {
+		brandingId: 1576,
+		noPreview: true
+		}
+		}], {
+		brandingId: 1576,
+		hideProtectedBy: true,
+		hideUserMenu: true,
+		hideFooterLinks: true,
+		hideUserMenu: true,
+		oauthAppKey: '87e3d38f-313d-47d0-b6a7-d9afe4e21a61',
+		});
+		
+		$('#account').hide();
+		
+		paywall.on('authenticated', function() {
+		$('#account').show();
+		});
+		
+		paywall.on('logout', function() {
+		location.reload();
+		$('#account').hide();
+		});
+		
+		$('.dropdown').click(function() {
+		$(this).attr('tabindex', 1).focus();
+		$(this).toggleClass('active');
+		$(this).find('.dropdown-menu').slideToggle(300);
+		});
+		$('.dropdown').focusout(function() {
+		$(this).removeClass('active');
+		$(this).find('.dropdown-menu').slideUp(300);
+		});
+		
+		</script>
+		
+		<!-- Start of HubSpot Embed Code -->
+		<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8399489.js"></script>
+		<!-- End of HubSpot Embed Code -->
+		<div id="popup" style="background-color: rgba(0, 0, 0, 0.8); height:100vh; width:100%; padding-top:50px; text-align:center; color:#ffffff;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size: 30; position:fixed; inset:0px; z-index: 3;,0px,0px,0px;-webkit-transition: opacity 2s ease-in;
+		-moz-transition: opacity 0.5s ease-in;
+		-o-transition: opacity 0.5s ease-in;
+		-ms-transition: opacity 0.5s ease-in;
+		transition: opacity 0.5s ease-in; display: none;" onclick="hidePopup()">
+		</div>
+		
+		<div id="popupElements" style="padding-top:10%; text-align:center; position: fixed; color:#ffffff;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size: 24px;inset:0px,0px,0px,0px; margin: auto; width: 100%; z-index: 3;-webkit-transition: opacity 2s ease-in;
+		-moz-transition: opacity 0.5s ease-in;
+		-o-transition: opacity 0.5s ease-in;
+		-ms-transition: opacity 0.5s ease-in;
+		transition: opacity 0.5s ease-in; display: none;">
+		<div style="">
+		<p style="color:white; padding-bottom:20px; margin:auto; width:80%;"> Live-streaming, Video On Demand, Ticketing & Chat. </p>
+		
+		<div onclick="" style="background-color: white; max-width: 600px; margin: 10px; aspect-ratio: 16/9; margin: auto; border-radius:12px; background: url('https://ik.imagekit.io/venuo/Build_a_better_digital_venue_cwF0pCgXX.jpg?updatedAt=1621331763701') no-repeat center center; background-size: contain; position:relative; cursor:pointer;">
+		
+		<a target="_blank" onclick="goToVenuo()" style="text-decoration: none;background-color: white; color: rgba(210,122,115); padding:10px; border-radius: 12px; border:none; font-size: 22; position:absolute; inset: 85% 34% 5px 34%; cursor:pointer;">
+		Try It Now
+		</a>
+		<a onclick="hidePopup()" style="text-decoration: none; padding:10px; border-radius: 12px; border:none; font-size: 22; position:absolute; inset: 100% 34% 0px 34%; height: 25px;cursor: pointer; ">
+		No Thanks
+		</a>
+		
+		</div>
+		</div>
+		
+		</div>
+		
+		<script type="text/javascript">
+		
+		document.getElementById('popupElements').style.opacity = 0
+		document.getElementById('popup').style.opacity = 0
+		document.getElementById('popupElements').style.display = "inline-block"
+		document.getElementById('popup').style.display = "inline-block"
+		
+		setTimeout(()=>{
+		document.getElementById('popupElements').style.opacity = 1
+		document.getElementById('popup').style.opacity = 1
+		},1500)
+		
+		function hidePopup(){
+		document.getElementById('popupElements').style.display = "none"
+		document.getElementById('popup').style.display = "none"
+		}
+		function goToVenuo(){
+		window.open('https://venuo.co.uk')
+		}
+		</script>
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<header id="header">
+						<div id="container09" class="container columns full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<div id="image05" class="image">
+											<a href="#" class="frame"><img src="assets/images/image05.png" alt="" /></a>
+										</div>
+									</div>
+									<div>
+										<div id="embed01">
+											<!-- START OF USER BUTTONS EMBED -->
+											<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+											
+											 <div class="dropdown" id="account">
+											 <div class="select">
+											 <span>My Account</span>
+											 <i class="fa fa-chevron-left"></i>
+											 </div>
+											 <input type="hidden" name="gender">
+											 <ul class="dropdown-menu">
+											 <li class="inplayer-paywall-account">My Details</li>
+											 <li><a href="#store">Events</a></li>
+											 <li class="inplayer-paywall-logout">Logout</li>
+											 </ul>
+											 </div>
+											
+											 <!-- This line is the code for the Login button. Put it where you wish the button to appear.-->
+											 <button type="button" name="button" class="button inplayer-paywall-login">Login</button>
+											
+											<!-- END OF USER BUTTONS EMBED-->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</header>
+					<section id="store-section">
+						<div id="container07" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<p id="text01">We Organise &amp; Host Online Events</p>
+									<div id="image03" class="image">
+										<a href="#store" class="frame"><img src="assets/images/image03.png" alt="" /></a>
+									</div>
+									<hr id="divider05">
+								</div>
+							</div>
+						</div>
+						<div id="container18" data-scroll-id="store" data-scroll-behavior="default" data-scroll-offset="0" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<ul id="links05" class="links">
+										<li class="n01">
+											<a href="#mission">Read Our Mission</a>
+										</li>
+									</ul>
+									<hr id="divider03">
+									<hr id="divider06">
+									<div id="gallery01" class="gallery full screen">
+										<div class="inner">
+											<ul>
+												<li>
+													<a href="https://venuo.co.uk/defeatist-lonesome-livestream" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDgwIDEwODAiIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiM0OTMzNGIiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/7ce1b90b.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDgwIDEwODAiIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiM5ZjhlOTEiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/d91b18c1.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDc5IDEwNzkiIHdpZHRoPSIxMDc5IiBoZWlnaHQ9IjEwNzkiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMwZjBjMGUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/b802c321.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="https://www.priceless.com/entertainment/product/163059/live-to-vinyl-the-vamps/0/4007/options" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/a79f4b46.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/20de9c40.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDgwIDEwODAiIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMyZDI1MTgiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/21087a77.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDgwIDEwODAiIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiM3ZjVmNDMiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/d268fc62.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDgwIDEwODAiIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMyYTIyNTIiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/a4872b2e.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="https://fb.watch/2f8BR_-vEV/" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDgwIDEwODAiIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMxNTE1MTUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/04bc37c7.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/780f03b0.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/87c2880f.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="https://thezealots.subfranticmusic.com/" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDc3IDEwNzUiIHdpZHRoPSIxMDc3IiBoZWlnaHQ9IjEwNzUiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMzYzNiM2MiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/15319c97.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="https://bearsintrees.subfranticmusic.com/" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDc4IDEwNzgiIHdpZHRoPSIxMDc4IiBoZWlnaHQ9IjEwNzgiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMzOTMzMjgiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/7decf77b.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="https://watch.lockett-vettese.live/" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/6553e20b.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDc2IDEwNzgiIHdpZHRoPSIxMDc2IiBoZWlnaHQ9IjEwNzgiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMyNjI2MWMiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/54467a65.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="https://www.youtube.com/watch?v=TkpdY8yLhco&ab_channel=GeorgeThePoet" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/0771985a.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="https://www.youtube.com/watch?v=Ag0xmUu_2f8&t=491s&ab_channel=OhWonder" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDgwIDEwODAiIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMyNTE5MGUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/59d78ddb.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDc5IDEwNzkiIHdpZHRoPSIxMDc5IiBoZWlnaHQ9IjEwNzkiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMxNTE4MTkiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/6b8f8a0d.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/66fffeb7.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="https://shlomo.subfranticmusic.com/" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/9af4b39e.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDgwIDEwNzkiIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwNzkiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMzZjNhMmMiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/190feb37.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/7d0c2e45.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="https://emmalindars.subfranticmusic.com/" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/e9f2f1a6.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/1e962eb1.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/f3b4a1a5.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#sorry" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/8cd0b6a7.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="https://www.facebook.com/Kytary.cz/videos/2549712855154020" class="thumbnail"><span class="frame"><img src="assets/images/gallery01/a78e25a9.jpg" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#home" class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxMDgwIDEwODAiIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMxOTBhMTYiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery01/0c80cce6.jpg" alt="Untitled" /></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="container05" data-scroll-id="contact" data-scroll-behavior="default" data-scroll-offset="0" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<hr id="divider32">
+									<hr id="divider08">
+									<hr id="divider31">
+									<p id="text21"><span>Want us to host your online event?</span><br /><span>Let us know.</span></p>
+									<form enctype="multipart/form-data" id="form04" method="post" action="#">
+										<div class="inner">
+											<div class="field">
+												<input type="text" name="name" id="form04-name" placeholder="Name" maxlength="256" required />
+											</div>
+											<div class="field">
+												<input type="email" name="email" id="form04-email" placeholder="Email" maxlength="128" required />
+											</div>
+											<div class="field">
+												<input type="text" name="contact-number" id="form04-contact-number" placeholder="Contact Number (optional)" maxlength="256" />
+											</div>
+											<div class="field">
+												<select name="how-can-we-help-you" id="form04-how-can-we-help-you" required>
+													<option value="">&ndash; How Can We Help You? &ndash;</option>
+													<option value="value1">I'm an artist/talent manager and i need to ticket my livestream concert securely.</option>
+													<option value="value2">I'm looking for solutions to host my event online I and need advice.</option>
+													<option value="value3">I'm a venue and i would like to be added to the venues database.</option>
+													<option value="value4">I want to know about platform fees.</option>
+													<option value="value5">Anything else</option>
+												</select>
+											</div>
+											<div class="field">
+												<textarea data-gramm_editor="false" name="details" id="form04-details" placeholder="Details (optional)"></textarea>
+											</div>
+											<div class="actions">
+												<button type="submit">Submit</button>
+											</div>
+										</div>
+										<input type="hidden" name="id" value="form04" />
+									</form>
+									<ul id="links03" class="links">
+										<li class="n01">
+											<a href="#home">How Does It Work?</a>
+										</li>
+									</ul>
+									<hr id="divider07">
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="home-section">
+						<div id="container19" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<hr id="divider29">
+									<h2 id="text29">Live Streaming Doesn&#39;t Need to Suck</h2>
+									<h3 id="text56">We take the hard work out of live streaming</h3>
+									<h3 id="text53">so you can focus on performing</h3>
+									<hr id="divider39">
+									<form enctype="multipart/form-data" id="form03" method="post" action="#">
+										<div class="inner">
+											<div class="field">
+												<input type="email" name="email" id="form03-email" placeholder="Email" maxlength="128" required />
+											</div>
+											<div class="actions">
+												<button type="submit"><svg><use xlink:href="assets/icons.svg#music"></use></svg><span class="label">Lets Go!</span></button>
+											</div>
+										</div>
+										<input type="hidden" name="id" value="form03" />
+									</form>
+									<hr id="divider38">
+									<ul id="links01" class="links">
+										<li class="n01">
+											<a href="#howitworks">Find Out How We Can Make It Better</a>
+										</li>
+									</ul>
+									<div id="image04" class="image">
+										<a href="#howitworks" class="frame"><img src="assets/images/image04.png" alt="" /></a>
+									</div>
+									<hr id="divider30">
+								</div>
+							</div>
+						</div>
+						<div id="container12" data-scroll-id="howitworks" data-scroll-behavior="previous" data-scroll-offset="0" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<hr id="divider40">
+									<h3 id="text44">How it Works</h3>
+									<hr id="divider41">
+								</div>
+							</div>
+						</div>
+						<div id="container28" class="style1 container columns full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<p id="text49"><span class="li">A Bandstream event is just like any other live ticketed event, except your audience is online and the venue can be anywhere!</span></p>
+									</div>
+									<div>
+										<p id="text50"><span class="li">Bandstream handles the production and venue, we also help you with promotion and you get paid for performing.</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="container14" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<p id="text19">See Our Demo Event Page</p>
+									<ul id="buttons05" class="buttons">
+										<li>
+											<a href="https://venuo.co.uk/morocco-animal-aid" class="button n01">Event Page Demo</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="container22" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<h3 id="text43">Why Work With Us?</h3>
+								</div>
+							</div>
+						</div>
+						<div id="container30" class="container columns full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<p id="text04"><span class="li">Promote your material through live performance and reach fans you would not reach otherwise.</span></p>
+									</div>
+									<div>
+										<p id="text30"><span class="li">Live stream from any location to all of your fans wherever they are through our <strong>paywall monetisation</strong>.</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="container31" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<hr id="divider04">
+									<p id="text33">We Work With...</p>
+								</div>
+							</div>
+						</div>
+						<div id="container16" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<div id="gallery02" class="gallery full screen">
+										<div class="inner">
+											<ul>
+												<li>
+													<span class="frame"><img src="assets/images/gallery02/9bfb252f.png" alt="Untitled" /></span>
+												</li><li>
+													<span class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA3NjIgMjE3IiB3aWR0aD0iNzYyIiBoZWlnaHQ9IjIxNyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery02/e4f71445.png" alt="Untitled" /></span></span>
+												</li><li>
+													<span class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAzMzAgMTA5IiB3aWR0aD0iMzMwIiBoZWlnaHQ9IjEwOSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0idHJhbnNwYXJlbnQiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/gallery02/b1910001.png" alt="Untitled" /></span></span>
+												</li><li>
+													<span class="frame"><img src="assets/images/gallery02/5f1fbce1.png" alt="Untitled" /></span>
+												</li><li>
+													<span class="thumbnail"><span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNDU1IDIxNyIgd2lkdGg9IjE0NTUiIGhlaWdodD0iMjE3IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cmVjdCBmaWxsPSJ0cmFuc3BhcmVudCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D" data-src="assets/images/gallery02/7b1919c7.png" alt="Untitled" /></span></span>
+												</li><li>
+													<a href="https://www.oooshtours.co.uk/" class="thumbnail"><span class="frame"><img src="assets/images/gallery02/43fc06c6.png" alt="Untitled" /></span></a>
+												</li><li>
+													<span class="frame"><img src="assets/images/gallery02/923f98c3.png" alt="Untitled" /></span>
+												</li><li>
+													<span class="frame"><img src="assets/images/gallery02/523feece.png" alt="Untitled" /></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="container21" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<p id="text47">Join Us!</p>
+									<p id="text41">Keep more, sell to more fans through one event!</p>
+								</div>
+							</div>
+						</div>
+						<div id="container11" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<h3 id="text26">We Deliver Data to Help You <strong>Grow</strong></h3>
+								</div>
+							</div>
+						</div>
+						<div id="container17" class="container columns full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<p id="text35"><span class="li">Build a better picture of who your audience are with data on location and average viewer time.</span></p>
+									</div>
+									<div>
+										<p id="text36"><span class="li">Keep your audience engaged for longer with live audience interaction during your event.</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="container10" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<p id="text24">Reach your fans through our platform.</p>
+								</div>
+							</div>
+						</div>
+						<div id="container26" class="container columns full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<p id="text45">Want to get an idea of how much you can earn?</p>
+										<hr id="divider26">
+										<ul id="buttons03" class="buttons">
+											<li>
+												<a href="#pricing" class="button n01">Pricing Calculator</a>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<ul id="links02" class="links">
+											<li class="n01">
+												<a href="#mission">Read Our Mission</a>
+											</li>
+										</ul>
+										<hr id="divider12">
+										<ul id="buttons04" class="buttons">
+											<li>
+												<a href="#mission" class="button n01">Our Mission</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="container27" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<hr id="divider02">
+									<hr id="divider33">
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="ourmission-section">
+						<div id="container29" data-scroll-id="mission" data-scroll-behavior="default" data-scroll-offset="0" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<h3 id="text03">What Is Our Mission?</h3>
+									<div id="image02" class="image">
+										<a href="#change" class="frame"><img src="assets/images/image02.png" alt="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="container02" data-scroll-id="change" data-scroll-behavior="default" data-scroll-offset="0" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<p id="text25">Live events are changing.</p>
+									<hr id="divider13">
+									<p id="text55">Our mission is to lead that change and create a better live event going into the future.</p>
+									<hr id="divider28">
+									<p id="text57">Too often live streaming music events can result in dull and boring content to watch and to perform. We can effect change by recognising that this is a new and evolving format with great potential and no rules to follow. We can unleash this potential by bringing together our creativity to forge a completely new type of live event that people will love.</p>
+									<hr id="divider10">
+									<p id="text28">We have a <strong>blank slate</strong>, together let&#39;s create something amazing!</p>
+									<hr id="divider01">
+									<p id="text22"><span>We want to help everyone from artists and fans to venues and promoters by enabling people to run unique live, ticketed events from anywhere. The monetisation problem is a thing of the past.</span><br /><br /><span>Artists can engage their fans and continue to make money throughout the pandemic and beyond, venues can make use of their unused space and promoters can continue to book and promote shows.</span></p>
+									<ul id="buttons01" class="buttons">
+										<li>
+											<a href="#home" class="button n01">How Does It Work?</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="pricing-section">
+						<div id="container20" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<div id="embed03">
+										<div class="calconic-calculator" data-calculatorid="5f514257591ad3001e158036"></div>
+										<script>
+										 (function() { var qs,j,q,s,d=document, gi=d.getElementById,
+										 ce=d.createElement, gt=d.getElementsByTagName,
+										 id="calconic_", b="https://cdn.calconic.com/static/js/";
+										 if(!gi.call(d,id)) { j=ce.call(d,"script"); j.id=id; j.type="text/javascript"; j.async=true;
+										 j.dataset.calconic=true;
+										 j.src=b+"calconic.min.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(j,q) }
+										})();
+										</script>
+									</div>
+									<hr id="divider14">
+									<ul id="buttons02" class="buttons">
+										<li>
+											<a href="#contact" class="button n01">Contact Us Now</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="venuesdatabase-section">
+						<div id="container32" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<h3 id="text05"><span>Looking For A Venue?</span><br /><span>We Have You Covered.</span></h3>
+								</div>
+							</div>
+						</div>
+						<div id="container08" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<div id="embed05">
+										<iframe class="airtable-embed" src="https://airtable.com/embed/shrdhTAp8zPxBJ93N?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="863px" style="background: black; border: 0px solid #000;"></iframe>
+									</div>
+									<ul id="buttons08" class="buttons">
+										<li>
+											<a href="https://join.bandstream.tv" class="button n01">Join The Database</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="what-the-faq-section">
+						<div id="container03" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<h3 id="text09">Need some help?</h3>
+									<div id="gallery03" class="gallery full screen">
+										<div class="inner">
+											<ul>
+												<li>
+													<a href="#faqaccounts" class="thumbnail"><span class="frame"><img src="assets/images/gallery03/0183ac4b.png" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#faqpayments" class="thumbnail"><span class="frame"><img src="assets/images/gallery03/bc1df125.png" alt="Untitled" /></span></a>
+												</li><li>
+													<a href="#faqstreaming" class="thumbnail"><span class="frame"><img src="assets/images/gallery03/60eecb79.png" alt="Untitled" /></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<hr id="divider15">
+								</div>
+							</div>
+						</div>
+						<div id="container25" data-scroll-id="faqaccounts" data-scroll-behavior="default" data-scroll-offset="0" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<p id="text14">Account &amp; Login</p>
+									<p id="text15"><span><strong>How Do I Watch?</strong> - If you’ve already purchased your pass, just go to the same webpage where you made the purchase. You can find a list of our live events <a href="#store">here</a>.</span><br /><br /><span><strong>I Can&#39;t Login</strong> - Make sure you are using the same email and password you set up during registration and payment.</span><br /><span>This will be the email on which you’ve received the registration and/or payment confirmation. If you are sure you are using the correct email and are on the right page, try resetting your password.</span><br /><br /><span><strong>I Cant Reset My Password?</strong> -</span><br /><span>You should receive a password reset token by email. If you don’t see it in your Inbox, make sure to check your Spam and Trash folders.</span><br /><span>Enter the token in the first field of the window that popped up previously.</span><br /><span>Enter your new password in the second and third field.</span><br /><br /><span><strong>Can I Watch On Another Device?</strong> - Yes! You can enjoy your content on a PC, laptop, tablet, phone, or a supported Smart TV regardless of where you’ve made your purchase originally. You can only watch content on one device simultaneously.</span></p>
+									<hr id="divider09">
+								</div>
+							</div>
+						</div>
+						<div id="container33" data-scroll-id="faqpayments" data-scroll-behavior="default" data-scroll-offset="0" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<p id="text38">Payments</p>
+									<p id="text39"><span><strong>I Have Paid, But I Still Don&#39;t Have Access.</strong> - Make sure you are logging in with the same email and password you set up during registration and payment.</span><br /><span>This will be the email on which you’ve received the registration and/or payment confirmation.</span><br /><br /><span>If you are sure you are using the correct account, try the following:</span><br /><span>1. Refresh your browser page.</span><br /><span>2. Make sure you are not using a VPN.</span><br /><span>3. Clear your browser’s cache and cookies. Here is how to do it.</span><br /><span>4. Access the website via private/incognito mode.</span><br /><span>5. Try using a different browser (Chrome, Mozilla, Safari, Edge etc.).</span><br /><span>6. Try using a different device.</span><br /><span>7. Try using a different network like another WiFi connection, 4G or a Hotspot.</span><br /><br /><span><strong>Why Is My Payment Being Rejected?</strong> - Make sure you are using a supported card: Visa, Master Card, or American Express.</span><br /><span>The following cards are not supported: Discover, Diners Club, JSB, and UnionPay.</span></p>
+									<hr id="divider19">
+								</div>
+							</div>
+						</div>
+						<div id="container15" data-scroll-id="faqstreaming" data-scroll-behavior="default" data-scroll-offset="0" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<p id="text13">Content &amp; Streaming</p>
+									<hr id="divider27">
+									<p id="text06"><span><strong>Where Do I Watch?</strong> - If you’ve already purchased your pass, just go to the same webpage where you made the purchase. You can find a list of our live events <a href="#store">here</a>.</span><br /><br /><span><strong>Problems With Content.</strong> - Try these simple fixes:</span><br /><br /><span>1. Refresh your browser page.</span><br /><span>2. Clear your browser’s cache and cookies.</span><br /><span>3. Access the website via private/incognito mode.</span><br /><span>4. Restart your computer or device.</span><br /><span>5. Try using a different browser (Chrome, Mozilla, Safari, Edge etc.).</span><br /><span>6. Try using a different device.</span><br /><span>7. Make sure you are not using a VPN.</span><br /><span>8. Try using a different network like another WiFi connection, 4G or a Hotspot.</span><br /><br /><span><strong>The Streaming Quality Is Bad.</strong> - Try the following:</span><br /><br /><span>1. Refresh your browser page.</span><br /><span>2. Clear your browser’s cache and cookies.</span><br /><span>3. Access the website via private/incognito mode.</span><br /><span>4. Try using a different browser (Chrome, Mozilla, Safari, Edge etc.).</span><br /><span>5. Try using a different device.</span><br /><span>6. Make sure you are not using a VPN.</span><br /><span>7. Restart your router.</span><br /><span>8. Restart your device.</span><br /><span>9. Try using a different network like another WiFi connection, 4G or a Hotspot.</span><br /><span>10. Disconnect all other devices connected to your network and disable all background applications currently running in order to increase your connection speed.</span><br /><br /><span><strong>Can I Watch On A Smart TV?</strong> - Watching on your Smart TV will largely depend on the model of your TV. Certain models will allow streaming without any issues, but others might not, which is why we normally recommend using a computer, laptop, tablet or another device to enjoy your content. To stream on a Smart TV, you would use your TV’s browser to visit the webpage, log in, and watch the stream just like on your computer or tablet.</span></p>
+									<hr id="divider11">
+									<p id="text46">Didn&#39;t find a quick solution?</p>
+									<ul id="buttons07" class="buttons">
+										<li>
+											<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%75%70%70%6f%72%74%40%62%61%6e%64%73%74%72%65%61%6d%2e%74%76" class="button n01">Support</a>
+										</li>
+									</ul>
+									<hr id="divider17">
+									<ul id="links07" class="links">
+										<li class="n01">
+											<a href="#privacypolicy">Privacy Policy</a>
+										</li><li class="n02">
+											<a href="https://terms.bandstream.tv">Terms Of Service</a>
+										</li><li class="n03">
+											<a href="#">Homepage</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="covid-19-section">
+						<div id="container23" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<h3 id="text42">Covid-19 Policy</h3>
+									<div id="image01" class="image">
+										<a href="#flattenthecurve" class="frame"><img src="assets/images/image01.png" alt="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="container13" data-scroll-id="flattenthecurve" data-scroll-behavior="default" data-scroll-offset="0" class="container columns full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<p id="text27">We understand that Covid-19 has had a massive negative impact on the creative industries. This is why we are dedicated finding ways to continue supporting the creative industries through sales of online live streams and merchandise.</p>
+									</div>
+									<div>
+										<p id="text18">To keep you safe Bandstream provides PPE for all personnel at the event and we maintain 2m distance between personnel on site.</p>
+										<ul id="links06" class="links">
+											<li class="n01">
+												<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters">Help flatten the curve of Covid-19</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="blm-section">
+						<div id="container04" data-scroll-id="blacklivesmatter" data-scroll-behavior="default" data-scroll-offset="0" class="container default full">
+							<div class="wrapper">
+								<div class="inner">
+									<h3 id="text02">We don&#39;t need words.</h3>
+									<ul id="links08" class="links">
+										<li class="n01">
+											<a href="https://blacklivesmatter.com/">We need action</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="privacypolicy-section">
+						<div id="container24" class="container default full">
+							<div class="wrapper">
+								<div class="inner">
+									<h3 id="text08">Privacy Policy</h3>
+									<hr id="divider16">
+									<p id="text11"><span>Your privacy is important to us. It is bandstream.tv&#39;s policy to respect your privacy regarding any information we may collect from you across our website, http://bandstream.tv/, and other sites we own and operate.</span><br /><br /><span>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</span><br /><br /><span>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.</span><br /><br /><span>We don’t share any personally identifying information publicly or with third-parties, except when required to by law.</span><br /><br /><span>Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.</span><br /><br /><span>You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.</span><br /><br /><span>Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</span><br /><br /><span>This policy is effective as of 1 August 2020.</span></p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="sorry-section">
+						<div id="container01" class="container default full">
+							<div class="wrapper">
+								<div class="inner">
+									<p id="text07"><span>This show was for live viewers only.</span><br /><br /><span>Sorry you missed it.</span></p>
+									<ul id="buttons06" class="buttons">
+										<li>
+											<a href="#" class="button n01">Back</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<footer id="footer">
+						<div id="container06" class="container default full screen">
+							<div class="wrapper">
+								<div class="inner">
+									<ul id="links04" class="links">
+										<li class="n01">
+											<a href="#mission">Our Mission</a>
+										</li><li class="n02">
+											<a href="#home">For The Artists</a>
+										</li><li class="n03">
+											<a href="#store">For The Fans</a>
+										</li><li class="n04">
+											<a href="#covid-19">Covid-19</a>
+										</li><li class="n05">
+											<a href="#blacklivesmatter">BLM</a>
+										</li>
+									</ul>
+									<hr id="divider23">
+									<ul id="buttons09" class="buttons">
+										<li>
+											<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%75%70%70%6f%72%74%40%62%61%6e%64%73%74%72%65%61%6d%2e%74%76" class="button n01">Support</a>
+										</li><li>
+											<a href="#what-the-faq" class="button n02">FAQ</a>
+										</li>
+									</ul>
+									<div id="image06" class="image">
+										<a href="#flattenthecurve" class="frame"><img src="assets/images/image06.png" alt="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<script src="assets/main.js"></script>
+	</body>
