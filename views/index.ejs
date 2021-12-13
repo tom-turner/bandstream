@@ -259,6 +259,14 @@
 										</div>
 										<input type="hidden" name="id" value="form04" />
 									</form>
+									<script>
+										document.getElementById('form04').addEventListener('submit', () => {
+											event.preventDefault()
+											alert('Thank you!')
+											location.href = "/"
+
+										});
+									</script>
 									<ul id="links03" class="links">
 										<li class="n01">
 											<a href="#home">How Does It Work?</a>
@@ -284,11 +292,19 @@
 												<input type="email" name="email" id="form03-email" placeholder="Email" maxlength="128" required />
 											</div>
 											<div class="actions">
-												<button type="submit"><svg><use xlink:href="assets/icons.svg#music"></use></svg><span class="label">Lets Go!</span></button>
+												<button type="submit"><svg><use xlink:href="assets/icons.svg#music"></use></svg><span class="label">Let's Go!</span></button>
 											</div>
 										</div>
 										<input type="hidden" name="id" value="form03" />
 									</form>
+									<script>
+										document.getElementById('form03').addEventListener('submit', () => {
+											event.preventDefault()
+											alert('Thank you!')
+											location.href = "/"
+
+										});
+									</script>
 									<hr id="divider38">
 									<ul id="links01" class="links">
 										<li class="n01">
