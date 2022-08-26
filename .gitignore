@@ -1,1 +1,12 @@
-./node_modules/*
+logs/*
+.DS_Store
+config/config.json
+config/runningprocesses.json
+config/rocprocesses.json
+config/playerprocesses.json
+node_modules/*
+node_modules
+.env
+*~
+*.swp
+*.swo
